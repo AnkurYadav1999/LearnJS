@@ -121,3 +121,17 @@ const super1 = new superhero('Bruce','Wayne')
 
 super1.isASuperhero()
 
+
+function* generatorFunc(){
+    yield "hello"
+    yield "world"
+}
+
+const generatorObject = generatorFunc()
+
+
+for (const word of generatorObject) {
+    console.log(word)
+}
+
+
